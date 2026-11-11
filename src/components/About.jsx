@@ -1,43 +1,43 @@
 const values = [
   {
     number: '01',
-    title: 'Start with listening',
+    title: 'Our background',
     description:
-      'We learn what makes your business different before deciding what it should look like.',
+      'A short introduction to how the club began and the people who make it what it is.',
   },
   {
     number: '02',
-    title: 'Make it meaningful',
+    title: 'Our mission',
     description:
-      'Every design choice has a purpose, from the first impression to the smallest detail.',
+      'A simple statement about the community we are building and the difference we hope to make.',
   },
   {
     number: '03',
-    title: 'Build for what’s next',
+    title: 'Our vision',
     description:
-      'We create flexible digital foundations that can grow alongside your ambitions.',
+      'A look at the future we are working toward together, one connection at a time.',
   },
 ]
 
 function About() {
   return (
-    <section id="about" className="scroll-mt-24 px-6 py-24 sm:py-28">
-      <div className="mx-auto max-w-6xl">
+    <section id="about" className="scroll-mt-24 px-5 py-20 sm:px-8 sm:py-28">
+      <div className="mx-auto max-w-7xl">
         <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600">
               About us
             </p>
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              Small team.
+              Built around
               <br />
-              Big-picture thinking.
+              belonging.
             </h2>
           </div>
           <p className="max-w-2xl self-end text-lg leading-8 text-slate-600">
-            Northstar is a close-knit creative studio partnering with people
-            who want to make a difference. We bring strategy, design, and
-            technology together to make the complex feel clear.
+            This section is ready for the club story, mission, and vision.
+            Add the details that help visitors understand who you are and
+            what brings the community together.
           </p>
         </div>
 
