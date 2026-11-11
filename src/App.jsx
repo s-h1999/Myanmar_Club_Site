@@ -1,17 +1,16 @@
 import { useState } from 'react'
 import About from './components/About.jsx'
-import Contact, { JoinUs } from './components/Contact.jsx'
+import Events from './components/Events.jsx'
+import Gallery from './components/Gallery.jsx'
 import Home from './components/Home.jsx'
-import Services from './components/Services.jsx'
-
-const currentYear = new Date().getFullYear()
+import JoinUs from './components/JoinUs.jsx'
 
 const navigation = [
   { label: 'Home', href: '#home' },
   { label: 'About Us', href: '#about' },
   { label: 'Events & Activities', href: '#events' },
   { label: 'Gallery', href: '#gallery' },
-  { label: 'Join Us', href: '#contact' },
+  { label: 'Join Us', href: '#join-us' },
 ]
 
 function App() {
@@ -24,9 +23,9 @@ function App() {
           aria-label="Main navigation"
           className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8"
         >
-          <a className="flex items-center gap-3 text-lg font-bold tracking-tight" href="#home">
-            <span className="flex size-9 items-center justify-center rounded-full bg-amber-400 text-sm text-slate-950">C</span>
-            Myanmar Club Community
+          <a aria-label="Home" className="flex items-center gap-3" href="#home">
+            <span aria-hidden="true" className="size-9 rounded-full bg-amber-400" />
+            <span aria-hidden="true" className="h-4 w-36 rounded bg-slate-200" />
           </a>
           <button
             type="button"
@@ -61,15 +60,15 @@ function App() {
       <main>
         <Home />
         <About />
-        <Services />
-        <Contact />
+        <Events />
+        <Gallery />
         <JoinUs />
       </main>
 
       <footer className="border-t border-slate-200 px-5 py-8 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {currentYear} Myanmar Club Community.</p>
-          <p>A place to connect, grow, and belong.</p>
+          <span aria-hidden="true" className="h-3 w-40 rounded bg-slate-200" />
+          <span aria-hidden="true" className="h-3 w-28 rounded bg-slate-200" />
         </div>
       </footer>
     </div>

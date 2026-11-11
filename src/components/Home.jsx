@@ -6,49 +6,38 @@ function Home() {
     >
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <p className="mb-6 inline-flex rounded-full border border-amber-300/40 bg-amber-300/10 px-4 py-2 text-sm font-medium text-amber-200">
-            A welcoming space for everyone
-          </p>
-          <h1 className="max-w-3xl text-5xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
-            Find your people. <span className="text-amber-300">Make an impact.</span>
-          </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-            A community club built around shared interests, meaningful
-            conversations, and experiences worth remembering.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              className="rounded-lg bg-amber-300 px-6 py-3 font-semibold text-slate-950 transition hover:bg-amber-200"
-              href="#about"
-            >
-              Discover the club
-            </a>
-            <a
-              className="rounded-lg border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-slate-400"
-              href="#events"
-            >
-              See what’s happening
-            </a>
+          <h1 className="sr-only">Home</h1>
+          <div aria-hidden="true">
+            <div className="mb-6 h-9 w-48 rounded-full border border-amber-300/40 bg-amber-300/10" />
+            <div className="max-w-3xl space-y-3">
+              <div className="h-12 w-full max-w-2xl rounded bg-white/15 sm:h-16" />
+              <div className="h-12 w-4/5 max-w-xl rounded bg-amber-300/70 sm:h-16" />
+            </div>
+            <div className="mt-6 max-w-xl space-y-3">
+              <div className="h-4 w-full rounded bg-slate-700" />
+              <div className="h-4 w-5/6 rounded bg-slate-700" />
+              <div className="h-4 w-2/3 rounded bg-slate-700" />
+            </div>
+            <div className="mt-9 flex flex-wrap gap-4">
+              <div className="h-12 w-40 rounded-lg bg-amber-300" />
+              <div className="h-12 w-40 rounded-lg border border-slate-600" />
+            </div>
           </div>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-amber-300/25 via-slate-900 to-slate-900 p-7 shadow-2xl sm:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">
-            At a glance
-          </p>
+        <div aria-hidden="true" className="rounded-3xl border border-white/10 bg-gradient-to-br from-amber-300/25 via-slate-900 to-slate-900 p-7 shadow-2xl sm:p-10">
+          <div className="h-3 w-28 rounded bg-amber-200/50" />
           <div className="mt-8 aspect-[4/3] rounded-2xl border border-dashed border-white/20 bg-white/5 p-5">
-            <div className="flex h-full items-end rounded-xl bg-gradient-to-br from-amber-200/30 to-transparent p-5">
-              <p className="max-w-xs text-2xl font-semibold leading-snug">Your next shared experience starts here.</p>
-            </div>
+            <div className="h-full rounded-xl bg-gradient-to-br from-amber-200/30 to-transparent" />
           </div>
           <div className="mt-10 grid grid-cols-2 gap-6 border-t border-white/10 pt-6">
             <div>
-              <p className="text-3xl font-bold">00</p>
-              <p className="mt-1 text-sm text-slate-400">Members</p>
+              <div className="h-8 w-16 rounded bg-white/15" />
+              <div className="mt-2 h-3 w-20 rounded bg-slate-700" />
             </div>
             <div>
-              <p className="text-3xl font-bold">00</p>
-              <p className="mt-1 text-sm text-slate-400">Events this year</p>
+              <div className="h-8 w-16 rounded bg-white/15" />
+              <div className="mt-2 h-3 w-24 rounded bg-slate-700" />
             </div>
           </div>
         </div>
