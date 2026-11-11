@@ -1,52 +1,46 @@
-const services = [
+const activities = [
   {
     number: '01',
-    title: 'Brand strategy',
-    description:
-      'Positioning, messaging, and a clear story that helps the right people understand your value.',
-    tags: ['Discovery', 'Positioning', 'Messaging'],
+    title: 'Upcoming events',
+    description: 'A clear space for meetups, celebrations, talks, and other events on the club calendar.',
+    tags: ['Date', 'Location', 'Details'],
   },
   {
     number: '02',
-    title: 'Digital design',
-    description:
-      'Distinctive, accessible websites and digital products designed around real people.',
-    tags: ['UX / UI', 'Web design', 'Prototyping'],
+    title: 'Regular activities',
+    description: 'Showcase the recurring activities and ways members can spend time together.',
+    tags: ['Groups', 'Workshops', 'Social'],
   },
   {
     number: '03',
-    title: 'Web development',
-    description:
-      'Fast, responsive, easy-to-manage websites built with modern tools and best practices.',
-    tags: ['React', 'Frontend', 'Accessibility'],
+    title: 'Get involved',
+    description: 'A callout for volunteering, contributing ideas, or helping make the next event happen.',
+    tags: ['Volunteer', 'Participate', 'Connect'],
   },
 ]
 
 function Services() {
   return (
-    <section
-      id="services"
-      className="scroll-mt-24 bg-slate-50 px-6 py-24 sm:py-28"
-    >
-      <div className="mx-auto max-w-6xl">
+    <section id="events" className="scroll-mt-24 bg-white px-5 py-20 sm:px-8 sm:py-28">
+      <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-indigo-600">
-            What we do
+            Events & activities
           </p>
           <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-            From first thought to final launch.
+            There is always something to look forward to.
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            Bring us in for one part of the journey or let’s build the whole
-            thing together.
+            Use this space for the club calendar, activity highlights, and
+            simple ways for members to take part.
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {services.map((service) => (
+          {activities.map((service) => (
             <article
               key={service.number}
-              className="flex flex-col rounded-2xl bg-white p-7 shadow-sm ring-1 ring-slate-200"
+              className="flex flex-col rounded-2xl bg-stone-50 p-7 ring-1 ring-slate-200"
             >
               <p className="text-sm font-bold text-indigo-600">
                 {service.number}
