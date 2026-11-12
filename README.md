@@ -55,6 +55,7 @@ Recent project commits:
 
 - `58834cb` - update the five page layouts
 - `8a1a351` - Update README and package lock
+- `bc8c78b` - Update the README by adding role and responsibility
 
 
 # 4. Issue list
